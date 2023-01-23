@@ -1,0 +1,16 @@
+let countel=document.getElementById("count-el");
+let count=0;
+function increment()
+{
+    count=count+1;
+    countel.innerText=count;
+    
+}
+let saveel=document.getElementById("save-el");
+function save()
+{   
+    let a = count + " -";
+    saveel.innerText+=a;
+    countel.innerText=0;
+    count=0;
+}
